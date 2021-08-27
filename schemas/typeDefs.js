@@ -12,6 +12,11 @@ const typeDefs = gql`
     countriesdata: [CountryData]!
     countrydata(countryId: ID!): CountryData
   }
+  type Mutation {
+    addCountryData(country: String!, year: String!, squareKm: Int!, totalPopulation: Int!): CountryData
+    updatePopulationData(id: ID!, totalPopulation: Int!): CountryData
+    deleteCountryData(id: ID!): CountryData
+  }
 `;
 
 module.exports = typeDefs;
