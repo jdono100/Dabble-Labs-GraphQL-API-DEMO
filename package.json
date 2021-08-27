@@ -1,0 +1,31 @@
+{
+  "name": "dabble-labs-graphql-api-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdono100/Dabble-Labs-GraphQL-API-DEMO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdono100/Dabble-Labs-GraphQL-API-DEMO/issues"
+  },
+  "homepage": "https://github.com/jdono100/Dabble-Labs-GraphQL-API-DEMO#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.3.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "mongoose": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
