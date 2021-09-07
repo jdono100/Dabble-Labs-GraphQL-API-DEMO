@@ -5,7 +5,7 @@ const resolvers = {
     countriesdata: async () => {
       return await CountryData.find({});
     },
-    countrydata: async () => {
+    countrydata: async (parent, { countryId, country, year, squareKm, totalPopulation }) => {
       return await CountryData.findOne({_id: countryId});
     }
   },
